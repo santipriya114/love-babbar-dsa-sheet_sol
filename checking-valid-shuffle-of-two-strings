@@ -1,0 +1,38 @@
+// Online Javascript Editor for free
+
+// Write, Edit and Run your Javascript code using JS Online Compiler
+ 
+ 
+let str1 = "ABC", str2 = "ZYS", shuffle = "YBAZSD";
+ 
+let i  = 0 , j = 0;
+ 
+function validShuffle(str1 , str2, shuffle) {
+
+   for(let k  = 0 ; k<shuffle.length ; k++){
+
+    if(i<str1.length && shuffle[k] === str1[i]){
+
+        i++;
+
+    } else if(j<str2.length && shuffle[k] === str2[j]){
+
+        j++;
+
+    } else{
+
+        return false;
+
+    }
+
+}
+
+return true; 
+
+}
+ 
+validShuffle(str1, str2, shuffle);
+ 
+ 
+ 
+ 
